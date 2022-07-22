@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataBridge", "DataBridge\DataBridge.csproj", "{57D3DA3F-0116-4F56-A8D0-0F810AE74984}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8242BB21-3784-4778-BEA4-A5BE534557E1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{A0B61790-48BF-42A0-BB42-AE08C658828A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{1DC9CC9E-98EE-49A5-AF92-3ECC1BDEDE2C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{6174A8E6-87C6-4440-8A8C-2D92432AFB6D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataBridge.Domain", "DataBridge.Domain\DataBridge.Domain.csproj", "{F27B1593-DE1B-4864-A95E-62AF5F95EAB9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataBridge.Infrastructure", "DataBridge.Infrastructure\DataBridge.Infrastructure.csproj", "{B324CC1D-094F-482B-8079-F52E88926D4C}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{C292173C-36DD-4A39-9354-E7B511F3814F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57D3DA3F-0116-4F56-A8D0-0F810AE74984}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57D3DA3F-0116-4F56-A8D0-0F810AE74984}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57D3DA3F-0116-4F56-A8D0-0F810AE74984}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57D3DA3F-0116-4F56-A8D0-0F810AE74984}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F27B1593-DE1B-4864-A95E-62AF5F95EAB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F27B1593-DE1B-4864-A95E-62AF5F95EAB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F27B1593-DE1B-4864-A95E-62AF5F95EAB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F27B1593-DE1B-4864-A95E-62AF5F95EAB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B324CC1D-094F-482B-8079-F52E88926D4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B324CC1D-094F-482B-8079-F52E88926D4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B324CC1D-094F-482B-8079-F52E88926D4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B324CC1D-094F-482B-8079-F52E88926D4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C292173C-36DD-4A39-9354-E7B511F3814F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C292173C-36DD-4A39-9354-E7B511F3814F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C292173C-36DD-4A39-9354-E7B511F3814F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C292173C-36DD-4A39-9354-E7B511F3814F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{57D3DA3F-0116-4F56-A8D0-0F810AE74984} = {A0B61790-48BF-42A0-BB42-AE08C658828A}
+		{A0B61790-48BF-42A0-BB42-AE08C658828A} = {8242BB21-3784-4778-BEA4-A5BE534557E1}
+		{1DC9CC9E-98EE-49A5-AF92-3ECC1BDEDE2C} = {8242BB21-3784-4778-BEA4-A5BE534557E1}
+		{6174A8E6-87C6-4440-8A8C-2D92432AFB6D} = {8242BB21-3784-4778-BEA4-A5BE534557E1}
+		{F27B1593-DE1B-4864-A95E-62AF5F95EAB9} = {1DC9CC9E-98EE-49A5-AF92-3ECC1BDEDE2C}
+		{B324CC1D-094F-482B-8079-F52E88926D4C} = {6174A8E6-87C6-4440-8A8C-2D92432AFB6D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {18E062DE-AA2B-4782-945F-177A2FAEE66E}
+	EndGlobalSection
+EndGlobal

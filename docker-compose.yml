@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  databridge:
+    image: ${DOCKER_REGISTRY-}databridge
+    build:
+      context: .
+      dockerfile: ./DataBridge/Dockerfile
+      
+  
+  rabbitmq3:
+   container_name: "rabbitmq"
+   depends_on:
+    - databridge
+   image: rabbitmq:3-management
+   environment:
+    - RABBITMQ_DEFAULT_USER=guest
+    - RABBITMQ_DEFAULT_PASS=guest
+   ports:
+    - '5672:5672' 
+    - '15672:15672' 
+  
+  mongo:
+    image: mongo
+    container_name: "mongodb"
+    restart: always
+    ports:
+      - 27017:27017
+    volumes:
+      - ./mongo:/data/db
+    environment:
+       MONGO_INITDB_ROOT_USERNAME: root
+       MONGO_INITDB_ROOT_PASSWORD: example
+
+volumes:
+  mongo:
