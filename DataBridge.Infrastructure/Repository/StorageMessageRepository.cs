@@ -58,6 +58,10 @@ namespace DataBridge.Mongo
 
         public async Task RemoveAsync(string id)
         {
+            if (id == null || id == "")
+            {
+                throw new ArgumentNullException(nameof(id));
+            }
             FilterDefinition<StorageMessage> filter = filterBuilder.Eq(e => e.Id, id);
 
             await dbCollection.DeleteOneAsync(filter);
