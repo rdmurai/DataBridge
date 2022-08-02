@@ -1,5 +1,6 @@
 ﻿using DataBridge.Dto;
 using DataBridge.RabbitMQ.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 using System.Text.Json;
@@ -20,6 +21,7 @@ namespace DataBridge.Controllers
 
        
         [HttpPost]
+        [Authorize]
         [SwaggerOperation("Send a message to Broker")]
         public IActionResult Post([FromBody] MessageDto message)
         {

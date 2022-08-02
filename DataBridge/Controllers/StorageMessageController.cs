@@ -1,5 +1,6 @@
 ﻿using DataBridge.Domain.Entities;
 using DataBridge.Mongo.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 
@@ -18,6 +19,7 @@ namespace DataBridge.Controllers
 
         [HttpGet]
         [Route("{id}")]
+        [Authorize(Roles = "manager")]
         [SwaggerOperation("Retrieve a message from Database by Id")]
         public async Task<IActionResult> Get(string id)
         {
